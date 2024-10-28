@@ -5,6 +5,15 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+Integer repeatCount = 4;
+String inputString = 'ABC';
+String repeater = '';
+
+for (Integer i = 1; i <=repeatCount; i++) {
+    if (i != repeatCount)
+        repeater = inputString + '; ';
+    else {
+        repeater = inputString;
+    }
+}
+System.debug(repeater);
