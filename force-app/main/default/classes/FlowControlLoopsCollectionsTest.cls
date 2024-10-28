@@ -8,7 +8,7 @@
 @IsTest
 public with sharing class FlowControlLoopsCollectionsTest {
     @IsTest
-    static void testHelloWorld() {
+    static void testhelloWorld() {
         String result = FlowControlLoopsCollections.helloWorld(10, 5);
         Assert.areEqual('Hello World!', result, 'Incorrect result for x > y');
 
